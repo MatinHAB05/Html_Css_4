@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Poppins_Reg";
+    src: local("Poppins-Regular") , local("Poppins_Regular") , local("Poppins Regular") , local("PoppinsRegular") ,  url("../../fonts/PopIns/Poppins_Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins_Med";
+    src: local("Poppins-Medium") , local("Poppins_Medium") , local("Poppins Medium") , local("PoppinsMedium") , url("../../fonts/PopIns/Poppins_Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins_SemiB";
+    src: local("Poppins-SemiBold") , local("Poppins_SemiBold") , local("Poppins SemiBold") , local("PoppinsSemiBold") , url("../../fonts/PopIns/Poppins_SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins_L";
+    src: local("Poppins-Light") , local("Poppins_Light") , local("Poppins Light") , local("PoppinsLight") ,  url("../../fonts/PopIns/Poppins_Light.ttf") format("truetype");
+}
+
