@@ -1,4 +1,12 @@
 :root{
+    --Red_theme_color : #C90000;
+    --Yellow_theme_color : #FFC300;
+    --grey_text_color : #7D7C7C;
+    --white_text_color : #FFFFFF;
+    --blackLight_text_color : #504F4F;
+    --black_text_color : #323232;
+    --Yellow_border : #FFF6A3;
+    --footer_back : #FFFDE6;
 
 }
 
