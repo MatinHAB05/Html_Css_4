@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: "Poppins_Med";
+    font-family: "Poppins_M";
     src: local("Poppins-Medium") , local("Poppins_Medium") , local("Poppins Medium") , local("PoppinsMedium") , url("../../fonts/PopIns/Poppins_Medium.ttf") format("truetype");
 }
 
