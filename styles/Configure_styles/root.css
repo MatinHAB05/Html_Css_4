@@ -2,6 +2,7 @@
     --backGround_color : #FFFEF9;
     --Red_theme_color : #C90000;
     --Yellow_theme_color : #FFC300;
+    --yellow_undeline : #FFF6A3;
     --grey_text_color : #7D7C7C;
     --white_text_color : #FFFFFF;
     --blackLight_text_color : #504F4F;
@@ -12,6 +13,8 @@
     --default_line_height : 1.5;
     --text_shadow :  0px 4px 4px rgba(0, 0, 0, 0.25);
     --btn_box_shadow : 0px 17px 17px rgba(112, 144 , 176, 0.2);
+    --container-padding: 0.5rem 5rem;
+    
 }
 
 
@@ -22,4 +25,23 @@
 body{
     font-family: "Poppins_Reg" , sans-serif;
     background-color: var(--backGround_color);
+}
+
+.red-title{
+    font-size: 3rem;
+    position: relative;
+    font-family: "Poppins_SemiB";
+    color : var(--Red_theme_color);
+    display: inline;
+    text-transform: capitalize;
+}
+.red-title::before{
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    height: 9px;
+    background-color: var(--yellow_undeline);
+    z-index: -1;
 }

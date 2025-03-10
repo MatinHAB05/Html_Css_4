@@ -1,55 +1,138 @@
 main{
-
+    
 }
 
 /********************************************************************************************************************/
 .main_Menu_section_1{
-
+    padding:var(--container-padding);
+    grid-row-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "barbtn" "listmenu" "seeall";
 }
 
 /********************************************************************************************************************/
 .main_MenuTitle{
-
+    grid-area: title;
 }
 
 .main_MenuTitle h2{
-
+    
 }
 
 .main__MenuBarBtn{
-
+    grid-area: barbtn;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(5,minmax(min-content,max-content));
 }
-.main__MenuBarBtn--btn_item{
 
+.main__MenuBarBtn--btn_item{
+    padding: 0.5rem 1.25rem;
+    background-color: #F1F1F1;
+    border: 1px solid #E3E3E3;
+    border-radius: var(--border_radius_btn);
+    -webkit-border-radius: var(--border_radius_btn);
+    -moz-border-radius: var(--border_radius_btn);
+    -ms-border-radius: var(--border_radius_btn);
+    -o-border-radius: var(--border_radius_btn);
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    grid-column-gap: 0.5rem;
 }
 
 .__MenuBarBtn-btn-text{
-
+    font-size: 1rem;
+    color: var(--blackLight_text_color);
+    text-decoration: none;
 }
 
 .__MenuBarBtn-btn-text--selected{
-
+    font-family: "Poppins_M";
+    color: var(--black_text_color);
+    background-color: var(--Yellow_theme_color);
+    border: 1px solid #FFD429;
 }
 
 /********************************************************************************************************************/
 
 .main__Product-List-Menu{
+    grid-area: listmenu;
+    grid-gap: 1rem;
+    justify-content: start;
+    display: grid;
 
-}
-
-.__Product-List-Menu__item{
     
+     grid-template-columns: repeat(auto-fit,minmax(224px,1fr));
 }
+.__Product-List-Menu__item{
+    /* grid-template-rows: repeat(auto-fill,max-content); */
+
+    grid-template-columns: 100%;
+
+    
+    position: relative;
+    display: grid;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    border: 1px solid #E3E3E3;
+    grid-row-gap: 1rem;
+
+}
+
+.sale-tag{
+    background: url("../../images/Main/Icon/sale_pin_icon.svg");
+    background-repeat: no-repeat ;
+    background-position-x: 5px;
+    background-position-y: 5px;
+}
+
+
+
 
 .menu__item-img-container{
-
+    display: grid;
+    position: relative;
+    justify-content: center;
+    /* width: 100%; */
+}
+.menu__item-img-container::before{
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    height: 50%;
+    background-color: #FFFDE6;
+    z-index: -1;
 }
 
 .menu__item-img-containe img{
-
 }
 
 .menu__item-title-container{
+    font-family: "Poppins_SemiB";
+    font-size: 1.25rem;
+
+    
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+
+    line-height: 1.5;
+
+}
+.menu__item-title-container p{
+
 
 }
 
@@ -59,6 +142,16 @@ main{
 }
 
 .menu__item-detail-container p{
+    font-family: "Poppins_Reg";
+    font-size: 0.875rem;
+    color: var(--blackLight_text_color);
+
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    line-height: 1.5;
 
 }
 
@@ -67,25 +160,47 @@ main{
 }
 
 .menu__item-price_basetIcon-container{
-
+    display: grid;
+    grid-template-areas: "price basket";
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu__item-price-container{
-
+    grid-area: price;
+    font-family: "Poppins_SemiB";
+    font-size: 1.5rem;
+    color: var(--black_text_color);
+    width: fit-content;
 }
 
 .menu__basket-item{
-
+    grid-area: basket;
+    background-color: var(--Red_theme_color);
+    padding: 5.4px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 
 .main__see-all-btn-container{
+    grid-area: seeall;
+    text-align: center;
 
+}
+.__SeeAllBtn{
+    font-size: 1.25rem;
+    font-family: "Poppins_M";
+    color:var(--blackLight_text_color) ;
 }
 
 
 /********************************************************************************************************************/
 
 .main_Saleoff_section_2{
+    padding:var(--container-padding);
 
 }
 
