@@ -65,7 +65,7 @@ main{
     display: grid;
 
     
-     grid-template-columns: repeat(auto-fit,minmax(224px,1fr));
+     grid-template-columns: repeat(auto-fill,minmax(224px,1fr));
 }
 .__Product-List-Menu__item{
     /* grid-template-rows: repeat(auto-fill,max-content); */
@@ -114,7 +114,9 @@ main{
     z-index: -1;
 }
 
-.menu__item-img-containe img{
+.menu__item-img-container img{
+    /* width:auto; */
+    width: 100%;
 }
 
 .menu__item-title-container{
