@@ -1,4 +1,5 @@
 main{
+    margin-top: var(--container_margin_top);
     
 }
 
@@ -158,7 +159,8 @@ main{
 }
 
 .menu__item-rating-container{
-
+    color: rebeccapurple;
+    font-weight: bold;
 }
 
 .menu__item-price_basetIcon-container{
@@ -190,6 +192,7 @@ main{
 .main__see-all-btn-container{
     grid-area: seeall;
     text-align: center;
+    text-decoration: underline;
 
 }
 .__SeeAllBtn{
@@ -207,7 +210,7 @@ main{
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: "sale" "menusaleoff";
-    margin-top: 5rem;
+    margin-top: var(--container_margin_top);
 }
 
 /********************************************************************************************************************/

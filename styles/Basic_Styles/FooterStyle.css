@@ -1,10 +1,18 @@
 footer{
-
+    margin-top: var(--container_margin_top);
 }
 
 /*****************************************************************************************************************/
 .footer__mobile-app{
-
+    padding: 0 0 0 12.5rem;
+    background-color:var(--grey_light) ;
+    border: none;
+    border-radius:0 22rem 22rem 0;
+    -webkit-border-radius:0 22rem 22rem 0;
+    -moz-border-radius:0 22rem 22rem 0;
+    -ms-border-radius:0 22rem 22rem 0;
+    -o-border-radius:0 22rem 22rem 0;
+    margin-top: var(--container_margin_top);
 
 }
 
@@ -22,19 +30,23 @@ footer{
 
 
 .footer__mobile-app__text-and-title{
-
+    padding: 4rem 0;
 
 }
 
 
 .mobile-app__mini-title{
-
+    font-family: "Poppins_M";
+    font-size: 1.1rem;
+    color: var(--grey_text_color);
 
 }
 
 
 .mobile-app__main-title{
-
+    font-family: "Poppins_M";
+    font-size: 3rem;
+    color: var(--Red_theme_color);
 
 }
 
@@ -46,8 +58,10 @@ footer{
 
 
 .mobile-app__main-description p{
-
-
+    line-height: 1.5;
+    font-family: "Poppins_Reg";
+    font-size: 1rem;
+    color: var(--black_text_color);
 }
 
 
@@ -66,45 +80,89 @@ footer{
 
 /*****************************************************************************************************************/
 .footer__location-input{
-
+    background-color: var(--black_text_color);
+    margin: 0 9.3rem;
+    padding: 6.8rem 11rem;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: var(--container_margin_top);
 
 }
 
 
 .footer__location-input__main-title{
-
+    font-family: "Poppins_M";
+    font-size: 3rem;
+    color: #FFFDE6;
 
 }
 
 
 .footer__location-input__description p{
 
-
+    font-family: "Poppins_Reg";
+    font-size: 1rem;
+    color: var(--grey_back);
 }
 
 
 .footer__location-input__type-location{
-
+    border-radius: var(--border_radius_btn);
+    -webkit-border-radius: var(--border_radius_btn);
+    -moz-border-radius: var(--border_radius_btn);
+    -ms-border-radius: var(--border_radius_btn);
+    -o-border-radius: var(--border_radius_btn);
+    background-color:var(--Yellow_theme_color);
+    border: none;
+    padding: 0.5rem 1rem ;
 
 }
 
 
 .__input-text{
+    border: none;
+    background-color:var(--Yellow_theme_color);
+    outline: none;
 
+    font-family: "Poppins_Reg";
+    font-size: 1rem;
+    color: var(--blackLight_text_color);
 
+}
+.__input-text::placeholder{
+    font-family: "Poppins_Reg";
+    font-size: 1rem;
+    color: var(--blackLight_text_color);
 }
 
 
 .__btn_reset{
+    font-family: "Poppins_M";
+    font-size: 1rem;
+    color: var(--black_text_color);
 
-
+    border-radius: var(--border_radius_btn);
+    -webkit-border-radius: var(--border_radius_btn);
+    -moz-border-radius: var(--border_radius_btn);
+    -ms-border-radius: var(--border_radius_btn);
+    -o-border-radius: var(--border_radius_btn);
+    background-color: #FFEAE6;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
 }
 
 
 
 /*****************************************************************************************************************/
 .footer-footer-nav-container{
-
+    background-color: #FFFDE6;
+     padding: 2.5rem 12.5rem;
+     margin-top: var(--container_margin_top);
 
 }
 
@@ -124,7 +182,11 @@ footer{
 
 
 .footer-nav-container__img-title__img{
-
+    display: block;
+    background-color: var(--Red_theme_color);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 18px;
 
 }
 
@@ -136,7 +198,9 @@ footer{
 
 
 .footer-nav-container__img-title__title h3{
-
+    font-size: 2rem;
+    font-family: "Poppins_SemiB";
+    color:var(--black_text_color);
 
 }
 
@@ -159,18 +223,21 @@ footer{
 /*****************************************************************************************************************/
 .footer-nav-container__nav-footer-container{
 
-
 }
 
 
 .__nav-footer-container__title{
-
-
+    font-size: 1.2rem;
+    font-family: "Poppins_M";
+    color: var(--black_text_color);
 }
 
 
-.__nav-footer-container__nav-text{
-
+.__nav-footer-container__nav-text a{
+    font-size: 1rem;
+    font-family: "Poppins_L";
+    color: var(--black_text_color);
+    
 
 }
 
