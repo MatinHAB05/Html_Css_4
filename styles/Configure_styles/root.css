@@ -43,7 +43,7 @@ body{
     display: inline;
     text-transform: capitalize;
 }
-.red-title::before{
+/* .red-title::before{
     content: "";
     position: absolute;
     bottom: 20%;
@@ -51,6 +51,16 @@ body{
     right: 0;
     height: 9px;
     background-color: var(--yellow_undeline);
+    z-index: -1;
+} */
+.red-title_underLine{
+    /* content: ""; */
+    position: absolute;
+    bottom: 0.7rem;
+    left: 0;
+    right: 0;
+    /* height: 20%; */
+    /* background-color: var(--yellow_undeline); */
     z-index: -1;
 }
 a{

@@ -1,0 +1,207 @@
+.main__MenuBarBtn--btn_item,.main__MenuBarBtn--btn_item div,.main__MenuBarBtn--btn_item path{
+    transition: background-color 150ms ease-in 100ms ,color 150ms ease-in 100ms ,fill 150ms ease-in 100ms ;
+    -webkit-transition: background-color 150ms ease-in 100ms ,color 150ms ease-in 100ms ,fill 150ms ease-in 100ms ;
+    -moz-transition: background-color 150ms ease-in 100ms ,color 150ms ease-in 100ms ,fill 150ms ease-in 100ms ;
+    -ms-transition: background-color 150ms ease-in 100ms ,color 150ms ease-in 100ms ,fill 150ms ease-in 100ms ;
+    -o-transition: background-color 150ms ease-in 100ms ,color 150ms ease-in 100ms ,fill 150ms ease-in 100ms ;
+}
+.main__MenuBarBtn--btn_item:hover{
+    background-color: var(--black_text_color);
+    
+}
+
+.main__MenuBarBtn--btn_item:hover{
+    background-color: var(--black_text_color);
+}
+.main__MenuBarBtn--btn_item:hover div{
+    /* color: var(--Yellow_theme_color); */
+    color: var(--grey_back);
+}
+.main__MenuBarBtn--btn_item:hover path{
+    /* fill: var(--Yellow_theme_color); */
+    fill: var(--grey_back);
+
+}
+
+
+.__MenuBarBtn-btn-text--selected:hover{
+    background-color: var(--black_text_color);
+}
+.__MenuBarBtn-btn-text--selected:hover div{
+    color: var(--Yellow_theme_color);
+}
+.__MenuBarBtn-btn-text--selected:hover path{
+    fill: var(--Yellow_theme_color);
+}
+
+.sale-tag::before{
+    animation: fade_in 800ms ease-in 10ms infinite alternate forwards;
+    -webkit-animation: fade_in 800ms ease-in 10ms infinite alternate forwards;
+}
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.bell_Ring_anim{
+    -webkit-animation: bell_Ring 100ms ease 110ms infinite alternate;
+    animation: bell_Ring 100ms ease 110ms infinite alternate;
+}
+@-webkit-keyframes bell_Ring {
+    0% {
+        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+}
+
+    100%{
+                   transform: rotate(3deg);
+                   -webkit-transform: rotate(3deg);
+                   -moz-transform: rotate(3deg);
+                   -ms-transform: rotate(3deg);
+                   -o-transform: rotate(3deg);
+}
+}
+
+@keyframes bell_Ring {
+    0% {
+                 transform: rotate(-3deg);
+                 -webkit-transform: rotate(-3deg);
+                 -moz-transform: rotate(-3deg);
+                 -ms-transform: rotate(-3deg);
+                 -o-transform: rotate(-3deg);
+}
+
+    100%{
+                  transform: rotate(3deg);
+                -webkit-transform: rotate(3deg);
+                -moz-transform: rotate(3deg);
+                -ms-transform: rotate(3deg);
+                -o-transform: rotate(3deg);
+}
+}
+
+
+.__anim_dollar_container{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    position: absolute;
+    width: 150%;
+    top: 0;
+    bottom: 0;
+    /*background-color: red;
+    */z-index: -1;
+    display: grid;
+    align-items: center;
+    font-size: 1.8rem;
+    letter-spacing: -600px;
+    color: #F6F4CE;
+    transform:translateX(-16.66%);
+    -moz-transform:translateX(-16.66%);
+    -ms-transform:translateX(-16.66%);
+    -o-transform:translateX(-16.66%);
+    -webkit-transform:translateX(-16.66%);
+    transition: background-color 1000ms ease 100ms ;
+    -webkit-transition: background-color 1000ms ease 100ms ;
+    -moz-transition: background-color 1000ms ease 100ms ;
+    -ms-transition: background-color 1000ms ease 100ms ;
+    -o-transition: background-color 1000ms ease 100ms ;
+}
+.dollar_in_anim_class{
+    animation: Doallr_In_Anim 2000ms cubic-bezier(0.46, 1.35, 0.9,-0.6) 100ms 1 normal forwards;
+    -webkit-animation: Doallr_In_Anim 2000ms cubic-bezier(0.46, 1.35, 0.9,-0.6) 100ms 1 normal forwards;
+}
+.dollar_out_anim_class{
+    animation: Doallr_Out_Anim 1000ms ease 100ms 1 normal forwards;
+    -webkit-animation: Doallr_Out_Anim 1000ms ease 100ms 1 normal forwards;
+}
+
+@keyframes Doallr_In_Anim {
+
+    100%{
+        padding-left: 150%;
+    }
+}
+
+@keyframes Doallr_Out_Anim {
+    100%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+}
+
+.__SeeAllBtn:hover{
+    color: rebeccapurple;
+    text-shadow: 0 5px 5px cyan;
+}
+
+
+.saleoff__item-orderbtn-container{
+    transition: background-color 150ms ease-in 100ms;
+    -webkit-transition: background-color 150ms ease-in 100ms;
+    -moz-transition: background-color 150ms ease-in 100ms;
+    -ms-transition: background-color 150ms ease-in 100ms;
+    -o-transition: background-color 150ms ease-in 100ms;
+}
+.saleoff__item-orderbtn-container div{
+    transition: color 150ms ease-in 100ms;
+    -webkit-transition: color 150ms ease-in 100ms;
+    -moz-transition: color 150ms ease-in 100ms;
+    -ms-transition: color 150ms ease-in 100ms;
+    -o-transition: color 150ms ease-in 100ms;
+}
+.saleoff__item-orderbtn-container path{
+    transition: fill 150ms ease-in 100ms;
+    -webkit-transition: fill 150ms ease-in 100ms;
+    -moz-transition: fill 150ms ease-in 100ms;
+    -ms-transition: fill 150ms ease-in 100ms;
+    -o-transition: fill 150ms ease-in 100ms;
+}
+
+.saleoff__item-orderbtn-container:hover{
+    background-color: var(--Red_theme_color);
+}
+.saleoff__item-orderbtn-container:hover div{
+    color: var( --Yellow_theme_color);
+}
+.saleoff__item-orderbtn-container:hover path{
+    fill: var( --Yellow_theme_color);
+}
+.__saleoff-items{
+    transition: transform 300ms ease 50ms;
+    -webkit-transition: transform 300ms ease 50ms;
+    -moz-transition: transform 300ms ease 50ms;
+    -ms-transition: transform 300ms ease 50ms;
+    -o-transition: transform 300ms ease 50ms;
+}
+
+.__saleoff-items:hover{
+    background-color: #E3F2FD;
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+}
+
+.menu__item-img-container::before{
+    transition: all 500ms ease 10ms;
+    -webkit-transition: all 500ms ease 10ms;
+    -moz-transition: all 500ms ease 10ms;
+    -ms-transition: all 500ms ease 10ms;
+    -o-transition: all 500ms ease 10ms;
+}
+.__Product-List-Menu__item:hover .menu__item-img-container::before{
+    background-color: #E3F2FD;
+    height: 100%;
+
+}
