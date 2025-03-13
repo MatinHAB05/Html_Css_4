@@ -31,8 +31,9 @@
 <body>
 
     <header>
+        <div class="anim_Main-nav-btn__hover"></div>
         <nav class="header__Mainnavbtn-Container header__GridItmes">
-            <a href="#" class="header__MainmacIcon  header__Mainnavbtn-items">
+            <a href="#" class="header__MainmacIcon  header__Mainnavbtn-items"  >
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="28" height="23" fill="url(#pattern0_1_102)"/>
                     <defs>
@@ -43,11 +44,11 @@
                     </defs>
                 </svg>    
             </a>
-            <a href="#" class="header__Mainnavtext header__Mainnavbtn-items _CURRENT-PAGE">Homepage</a>
-            <a href="#" class="header__Mainnavtext header__Mainnavbtn-items">Menu</a>
-            <a href="#" class="header__Mainnavtext header__Mainnavbtn-items">Sale off</a>
-            <a href="#" class="header__Mainnavtext header__Mainnavbtn-items">News</a>
-            <a href="#" class="header__Mainnavtext header__Mainnavbtn-items">Contact</a>
+            <a href="#HOME_TITLE" class="header__Mainnavtext header__Mainnavbtn-items _CURRENT-PAGE">Homepage</a>
+            <a href="#MENU_TITLE" class="header__Mainnavtext header__Mainnavbtn-items">Menu</a>
+            <a href="#SALE_OFF" class="header__Mainnavtext header__Mainnavbtn-items">Sale off</a>
+            <a href="#NEWS" class="header__Mainnavtext header__Mainnavbtn-items">News</a>
+            <a href="#NAV_LINKS" class="header__Mainnavtext header__Mainnavbtn-items">Contact</a>
         </nav>
 
         <nav class="header__navbtn-Container header__GridItmes">
@@ -56,7 +57,7 @@
         </nav>
 
         <section class="header__MainIdea-Container header__GridItmes">
-            <div class="__MainTitleHeader-Container">
+            <div class="__MainTitleHeader-Container" id="HOME_TITLE">
                 <h1>Order your favourite food</h1>
             </div>
             <div class="__MainDiscriptionHeader-Container">
@@ -116,7 +117,7 @@
 
     <main>
         <section class="main_Menu_section_1">
-            <div class="main_MenuTitle">
+            <div class="main_MenuTitle" id="MENU_TITLE">
                 <h2 class="red-title">MENU</h2>
             </div>
     
@@ -582,7 +583,7 @@
         </section>
 
         <section class="main_Saleoff_section_2">
-            <div class="main__saleoff-title">
+            <div class="main__saleoff-title" id="SALE_OFF">
                 <h2 class=""><span class="red-title">SALE OFF</span></h2>
             </div>
             <div class="main__saleoff-ProductList">
@@ -760,7 +761,7 @@
 
     <footer>
 
-        <section class="footer__mobile-app">
+        <section class="footer__mobile-app" id="NEWS">
             <div class="footer__mobile-app__img-mobile">
                 <img src="../images/Footer/other/mobile.png" alt="Mobile Image">
             </div>
@@ -778,7 +779,7 @@
         </section>
 
 
-        <section class="footer__location-input">
+        <section class="footer__location-input" id="NAV_LINKS">
             <div class="footer__location-input__main-title">FIND A FOODELI STORE NEAR YOU</div>
             <div class="footer__location-input__description"><p>see the convenience store address with you most</p></div>
             <form action="#" method="post" class="footer__location-input__type-location" autocomplete="on">
@@ -886,5 +887,13 @@
 
     </footer>
     
+
+
+
+    <script src="../scripts/Header/Header_app.js"></script>
+    <script src="../scripts/Main/Main_app.js"></script>
+    <script src="../scripts/Footer/Footer_app.js"></script>
+
+
 </body>
 </html>

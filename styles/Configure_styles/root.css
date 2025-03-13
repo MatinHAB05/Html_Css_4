@@ -19,6 +19,9 @@
     --grey_light : #E3E3E3;
     --container_margin_top : 5rem;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 *,*::after ,*::before{
@@ -28,6 +31,8 @@
 body{
     font-family: "Poppins_Reg" , sans-serif;
     background-color: var(--backGround_color);
+    overflow-x: hidden;
+
 }
 
 .red-title{

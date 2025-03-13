@@ -6,6 +6,8 @@ header{
     grid-template-areas: "main-nav nav-btn" "maintitle imgtitle";
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    
 }
 
 .header__GridItmes{
@@ -21,10 +23,11 @@ header{
     align-items: center;
     grid-area: main-nav;
     justify-content: start;
+
 }
 
 .header__Mainnavbtn-items{
-
+    z-index: 99;
 }
 
 .header__MainmacIcon{
@@ -73,6 +76,8 @@ header{
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+    z-index: 99;
+
 }
 .header__navbtn-items:nth-child(1){
     font-family: "Poppins_Reg";
@@ -88,7 +93,7 @@ header{
     font-family: "Poppins_M";
     background-color: var(--Red_theme_color);
     color: var(--white_text_color);
-    border: 2px solid var(--Red_theme_color);
+    border: 2px solid transparent;
     border-radius: var(--border_radius_btn);
     -webkit-border-radius: var(--border_radius_btn);
     -moz-border-radius: var(--border_radius_btn);
@@ -161,12 +166,17 @@ header{
     -o-border-radius: var(--border_radius_btn);
     box-shadow: var(--btn_box_shadow);
     border: 1px solid #F1F1F1;
-    padding: 0.5rem 1rem;
-    grid-column-gap: 1rem;
+    /* padding: 0.5rem 1rem; */
+    /* grid-column-gap: 1rem; */
 }
 
 .__plusCountOrder{
-
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: var(--border_radius_btn) 0 0 var(--border_radius_btn);
+    -webkit-border-radius: var(--border_radius_btn) 0 0 var(--border_radius_btn);
+    -moz-border-radius: var(--border_radius_btn) 0 0 var(--border_radius_btn);
+    -ms-border-radius: var(--border_radius_btn) 0 0 var(--border_radius_btn);
+    -o-border-radius: var(--border_radius_btn) 0 0 var(--border_radius_btn);
 }
 
 #order_conutHeader{
@@ -175,11 +185,20 @@ header{
     color: var(--Yellow_theme_color);
     border-left: 1px solid #F1F1F1;
     border-right: 1px solid #F1F1F1;
-    padding: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0 -3px;
+    z-index: 10;
+
 }
 
 .__minussCountOrder{
-
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0 var(--border_radius_btn) var(--border_radius_btn) 0;
+    -webkit-border-radius: 0 var(--border_radius_btn) var(--border_radius_btn) 0;
+    -moz-border-radius: 0 var(--border_radius_btn) var(--border_radius_btn) 0;
+    -ms-border-radius: 0 var(--border_radius_btn) var(--border_radius_btn) 0;
+    -o-border-radius: 0 var(--border_radius_btn) var(--border_radius_btn) 0;
+    z-index: 0;
 }
 
 .__MainOdernowBtn{
