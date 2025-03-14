@@ -1,5 +1,6 @@
 footer{
     margin-top: var(--container_margin_top);
+    z-index: 3;
 }
 
 /*****************************************************************************************************************/
@@ -87,12 +88,38 @@ footer{
 }
 
 
-.mobile-app__download-app a{
+.mobile-app__download-app__item-container{
+    display: grid;
+    background-color: var(--blackLight_text_color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 0.5rem 1rem;
 
-
+    grid-template-areas:  "iconic mini" "iconic bolded";
+    grid-row-gap: 0.3rem;
+    grid-column-gap: 0.5rem;
+    align-items: center;
+    color: var(--white_text_color);
 }
-
-
+.download-app__item-container__icon{
+    grid-area: iconic;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.download-app__item-container__miniText{
+    grid-area: mini;
+    font-family: "Poppins_L";
+    font-size: 0.7rem;
+}
+.download-app__item-container__BoldText{
+    grid-area: bolded;
+    font-family: "Poppins_M";
+    font-size: 1rem;
+}
 
 /*****************************************************************************************************************/
 .footer__location-input{
@@ -146,9 +173,10 @@ footer{
     -ms-border-radius: var(--border_radius_btn);
     -o-border-radius: var(--border_radius_btn);
     background-color:var(--Yellow_theme_color);
-    border: none;
+    border: 1px solid transparent;
     margin: 0 8rem;
     padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+    z-index: 4;
 
     display: grid;
     grid-template-areas: "input_box btn_box";
@@ -189,6 +217,24 @@ footer{
     border: none;
     padding: 1rem 1.5rem;
     cursor: pointer;
+    z-index: 99;
+    position: relative;
+}
+
+.map_icon_absTo_resetBtn{
+    position: absolute;
+    /* background-color: blue; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: var(--border_radius_btn);
+    z-index: -1;
+    padding: 0.25rem 0;
+
+}
+.map_icon_absTo_resetBtn path{
+    fill: #FFEAE6;
 }
 
 .footer__location-input__img-abs{
@@ -287,8 +333,17 @@ footer{
 
 
 .__social-nav__items{
-
-
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 
@@ -307,14 +362,17 @@ footer{
     color: var(--black_text_color);
     margin-bottom: 2rem;
 }
+.__nav-footer-container__nav-text{
 
+    position: relative;
+}
 
 .__nav-footer-container__nav-text a{
     font-size: 1rem;
     font-family: "Poppins_L";
     color: var(--black_text_color);
-    
-
+    display: inline-block;
+    line-height: 1.5;
 }
 
 

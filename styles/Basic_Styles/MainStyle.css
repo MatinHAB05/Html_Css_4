@@ -146,7 +146,7 @@ main{
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     word-break: break-all;
-
+z-index: 99;
     line-height: 1.5;
 
 }
@@ -157,6 +157,7 @@ main{
 
 
 .menu__item-detail-container{
+    z-index: 99;
 
 }
 
@@ -177,9 +178,13 @@ main{
 .menu__item-rating-container{
     color: rebeccapurple;
     font-weight: bold;
+z-index: 99;
+
 }
 
 .menu__item-price_basetIcon-container{
+z-index: 99;
+
     display: grid;
     grid-template-areas: "price basket";
     justify-content: space-between;
