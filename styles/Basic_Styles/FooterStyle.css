@@ -192,13 +192,14 @@ footer{
     background-color: transparent;
     font-family: "Poppins_Reg";
     font-size: 1rem;
-    color: var(--blackLight_text_color);
+    color: var(--black_text_color);
     
 }
 .__input-text::placeholder{
     font-family: "Poppins_Reg";
     font-size: 1rem;
     color: var(--blackLight_text_color);
+    opacity: 0.7;
 }
 
 
