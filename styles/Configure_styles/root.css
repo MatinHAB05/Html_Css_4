@@ -18,6 +18,7 @@
     --grey_back : #F1F1F1;
     --grey_light : #E3E3E3;
     --container_margin_top : 5rem;
+    --footer_bottom_gapC : 9vw;
 }
 html{
     scroll-behavior: smooth;

@@ -59,14 +59,14 @@
 
     .footer__location-input{
         background-color: var(--black_text_color);
-        margin: 0 50px;
+        margin: var(--container_margin_top) 50px;
         padding: 6.5% 120px;
 
     }
 
 
     .footer__location-input__type-location{
-        margin: 0 100px;
+        margin: var(--container_margin_top) 100px;
     }
     
     
@@ -98,7 +98,7 @@
 
 
     .footer__location-input__type-location{
-        margin: 0 0;
+        margin: var(--container_margin_top) 0;
     }
     
 }
@@ -177,11 +177,21 @@
 
 .footer__location-input{
     background-color: var(--black_text_color);
-    margin: 0 30px;
+    margin: var(--container_margin_top) 30px;
     padding: 6.5% 80px;
 
 }
 
+
+.footer-footer-nav-container{
+    padding: 2.5rem 6vw 5px;
+    grid-row-gap: 2rem;
+
+}
+:root{
+    --footer_bottom_gapC : 7vw;
+    
+}
 
 
 
@@ -192,6 +202,25 @@
 @media  screen and (max-width: 768px) {
     
 
+    .footer-footer-nav-container{
+        grid-template-areas: "navL" "mac"  "cp_right";
+        grid-row-gap: 2rem;
+        grid-column-gap: 0;
+        grid-template-columns: 100%;
+    }
+    
+    .footer-nav-container__title-wrapper{
+       justify-self: center;
+    }
+    :root{
+    --footer_bottom_gapC : 1rem;
+
+    }
+
+    .footer-navLinks-wrapper{
+        justify-content: space-between;
+        
+    }
 
 }
 
@@ -238,6 +267,10 @@
 padding: 1rem 0.5rem;    
 }
 
+
+.footer-footer-nav-container{
+    padding: 2.5rem 15px 5px;
+}
 }
 
 
@@ -258,6 +291,24 @@ padding: 1rem 0.5rem;
         grid-row-gap: 1rem;
 
     }
+    .footer-nav-container__img-title__title h3{
+        width: fit-content;
+    }
+
+    .__nav-footer-container__title{
+        font-size: 1rem;
+    }
+    .footer-nav-container__img-title__title h3{
+        font-size: 1.5rem;
+    }
+    /* .__nav-footer-container__nav-text a {
+        font-size: 0.8rem;
+    } */
+
+    .footer-nav-container__img-title__img{
+        scale: 0.75;
+    }
+
 
 }
 
@@ -268,9 +319,31 @@ padding: 1rem 0.5rem;
 
 
 
-@media  screen and (max-width: 200px) { 
-    
+@media  screen and (max-width: 280px) { 
+    .footer-footer-nav-container{
+        padding: 2.5rem 8px 5px;
+    }
+    .footer-nav-container__img-title__title h3{
+        width: fit-content;
+    }
 
+    .__nav-footer-container__title{
+        font-size: 0.9rem;
+        width: fit-content;
+    }
+
+
+    .__nav-footer-container__nav-text a {
+        font-size: 0.8rem;
+    }
+
+    .footer-nav-container__img-title__img{
+        scale: 0.75;
+    }
+
+    .__nav-footer-container__nav-text{
+        word-break: break-all;
+    }
 
 }
 

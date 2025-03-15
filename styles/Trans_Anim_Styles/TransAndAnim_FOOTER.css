@@ -127,11 +127,14 @@
     -ms-transform: scale(5);
     -o-transform: scale(5);
 }
-.footer-nav-container__nav-footer-container:nth-child(3) .__nav-footer-container__nav-text a:hover::before{
+.__nav-footer-container__nav-text--time a:hover::before{
     content: "- ";
     font-size: inherit;
     font-family: "Poppins_SemiB";
     text-align: center;
     vertical-align: middle;
     color: #c9b925;
+}
+.__nav-footer-container__nav-text a{
+    position: relative;
 }

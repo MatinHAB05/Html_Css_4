@@ -282,14 +282,16 @@ footer{
 /*****************************************************************************************************************/
 .footer-footer-nav-container{
     background-color: #FFFDE6;
-    padding: 2.5rem 12.5rem;
+    padding: 2.5rem 12vw 5px;
     margin-top: var(--container_margin_top);
 
     display: grid;
-    grid-template-areas: "mac useful openning" "cp_right cp_right cp_right";
+    grid-template-areas: "mac navL" "cp_right cp_right";
     justify-content: start;
-    grid-column-gap: 8rem;
+    grid-column-gap: var(--footer_bottom_gapC);
     grid-row-gap: 2rem;
+    
+    
 
 }
 
@@ -336,6 +338,7 @@ footer{
     font-family: "Poppins_SemiB";
     color:var(--black_text_color);
     text-align: center;
+    width: max-content;
 }
 
 
@@ -368,10 +371,15 @@ footer{
 
 
 /*****************************************************************************************************************/
-.footer-nav-container__nav-footer-container{
+.footer-navLinks-wrapper{
+    grid-area: navL;
     display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: var(--footer_bottom_gapC);
+    justify-content: start;
+    align-items: center;
     grid-row-gap: 1.5rem;
-    align-content: start;
+    
 }
 
 
@@ -379,7 +387,8 @@ footer{
     font-size: 1.2rem;
     font-family: "Poppins_M";
     color: var(--black_text_color);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    width: max-content;
 }
 .__nav-footer-container__nav-text{
 
@@ -394,20 +403,12 @@ footer{
     line-height: 1.5;
 }
 
-
+.__nav-footer-container__nav-text:nth-last-child(1),.__nav-footer-container__nav-text:nth-last-child(2){
+    grid-column-start: 1;
+    grid-column-end: 2;
+}   
 
 /*****************************************************************************************************************/
-.footer-footer-nav-container>div:nth-child(2){
-    grid-area:  useful;
-    /* height: 2000px;
-    background-color: rebeccapurple; */
-}
-.footer-footer-nav-container>div:nth-child(3){
-    grid-area: openning;
-    /* height: 2000px;
-    background-color: red; */
-
-}
 
 
 .__nav-footer-container__nav-text--abs-icon path{
