@@ -126,8 +126,8 @@ footer{
 /*****************************************************************************************************************/
 .footer__location-input{
     background-color: var(--black_text_color);
-    margin: 0 9.3rem;
-    padding: 6.8rem 11rem;
+    margin: 0 7%;
+    padding: 6.5% 10.3%;
     border: none;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -142,6 +142,7 @@ footer{
 
     position: relative;
     overflow: hidden;
+    grid-template-columns: 100%;
 }
 
 
@@ -176,13 +177,14 @@ footer{
     -o-border-radius: var(--border_radius_btn);
     background-color:var(--Yellow_theme_color);
     border: 1px solid transparent;
-    margin: 0 8rem;
+
+    margin: 0 20%;
     padding: 0.3rem 0.3rem 0.3rem 0.7rem;
     z-index: 4;
 
     display: grid;
     grid-template-areas: "input_box btn_box";
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: auto max-content;
 }
 
 
@@ -248,21 +250,31 @@ footer{
 }
 
 .footer__location-input_img-tag{
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .footer__location-input__img--salad{
-    left : 0;
-    height: 43% ;
-    top: 14%;
-    
+    left:  0;
+    width: 14vw ;
+    top: 0%;
+    height: auto;
+    transform: translateX(-10%) translateY(-20%);
+    -webkit-transform: translateX(-10%) translateY(-20%);
+    -moz-transform: translateX(-10%) translateY(-20%);
+    -ms-transform: translateX(-10%) translateY(-20%);
+    -o-transform: translateX(-10%) translateY(-20%);
 }
 .footer__location-input__img--hamber{
     bottom: 0;
-    height: 25%;
-    left: 10%;
-    
+    width: 15vw;
+    height: auto;
+    right: 0;
+    transform:    translateX(20%) translateY(5%);
+    -webkit-transform:    translateX(20%) translateY(5%);
+    -moz-transform:    translateX(20%) translateY(5%);
+    -ms-transform:    translateX(20%) translateY(5%);
+    -o-transform:    translateX(20%) translateY(5%);
 }
 
 
