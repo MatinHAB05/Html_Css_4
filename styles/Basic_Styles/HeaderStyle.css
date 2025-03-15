@@ -1,18 +1,32 @@
 header{
-    padding:var(--container-padding);
-    display: grid;
-    grid-template-columns: 1fr 50%;
-    grid-template-rows: auto auto;
-    grid-template-areas: "main-nav nav-btn" "maintitle imgtitle";
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
     
 }
 
-.header__GridItmes{
+.header_top{
+    position: relative;
+    justify-content: space-between;
+    grid-template-areas: "main-nav nav-btn";
+    grid-template-rows: auto;
+    display: grid;
+    padding:var(--container-padding);
+    width: 100%;
 
 }
+
+.header_bottom{
+    justify-content: space-between;
+    grid-template-areas: "maintitle imgtitle";
+    /* grid-template-rows: auto; */
+    display: grid;
+    padding:var(--container-padding);
+    width: 100%;
+
+}
+
+
+/* ediiit .header__GridItmes{
+
+} */
 
 /*******************************************************************************************************************************************************************************************************************************************************/
 
@@ -101,20 +115,29 @@ header{
     -o-border-radius: var(--border_radius_btn);    
 }
 
+
+/*******************************************************************************************************************************************************************************************************************************************************/
+
+.header_top_menubarMobile-container{
+    grid-area: mobile_menu;
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
 /*******************************************************************************************************************************************************************************************************************************************************/
 
 .header__MainIdea-Container{
     display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-areas: "title title" "description description" "total total" "sample ordertbn";
+    grid-template-columns: max-content;
+    grid-template-areas: "title" "description" "total" "btn_header";
     grid-row-gap: 2rem;
     grid-area: maintitle;
-    grid-column-gap: 1rem;
     align-content: center;
     justify-items: start;
     align-items: center;
 }
-
 .__MainTitleHeader-Container{
     grid-area: title;
 }
@@ -151,6 +174,15 @@ header{
 }
 .__MainTotalOderSampleHeader-Container span:nth-child(2){
     font-family: "Poppins_M";
+}
+
+
+.__Main_btn-header-bottom{
+    display: grid;
+    grid-area: btn_header;
+    grid-template-areas: "sample ordertbn";
+    grid-column-gap: 1rem;
+    align-items: center;
 }
 
 .__MainCountOrderSampleHeader-Container{
@@ -225,6 +257,7 @@ header{
     font-family: "Poppins_M";
     font-size: 1.25rem;
     color: black;
+    text-align: center;
 }
 
 
@@ -233,14 +266,17 @@ header{
 .header_imgTitle{
     position: relative;
     grid-area: imgtitle;
-
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .delivery_absloute-Container{
     position: absolute;
-    left: -14%;
+    left:0%;
     top: 14%;
-
+    transform: translateX(-70%);
     background-color:rgba(241, 241, 241, 0.4) ;
     border: 1px solid #F1F1F1;
     border-radius: 50px 50px 0 50px;
@@ -250,13 +286,14 @@ header{
     -o-border-radius: 50px 50px 0 50px;
     padding: 0.75rem 0.75rem;
     font-family: "Poppins_Reg";
-
     display: grid;
     grid-column-gap: 0.5rem;
     grid-template-columns: min-content 1fr;
-
     font-size: 1rem;
-
+    -webkit-transform: translateX(-70%);
+    -moz-transform: translateX(-70%);
+    -ms-transform: translateX(-70%);
+    -o-transform: translateX(-70%);
 }
 
 .time_icon svg{

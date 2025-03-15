@@ -264,10 +264,13 @@ z-index: 99;
     overflow-y: visible;
     cursor: url("../../images/Main/Icon/right-arrow-32.png") , pointer;
     padding-top: 15px;
+    /* scrollbar-color: transparent transparent; */
 }
 
+    
 
 .__saleoff-items{
+    
     display: grid;
     border: var(--grey_stroke);
     grid-template-columns: 100%;

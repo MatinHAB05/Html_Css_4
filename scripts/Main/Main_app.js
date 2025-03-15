@@ -4,6 +4,7 @@ const Menu_itmes = document.querySelectorAll(".__Product-List-Menu__item");
 const Menu_slaeoff_items = document.querySelectorAll(".__saleoff-items");
 const red_titles = document.querySelectorAll(".red-title_underLine"); 
 const yellow_underline = window.getComputedStyle(document.querySelector(':root')).getPropertyValue('--yellow_undeline');
+const scroll_X = document.querySelector(".main__saleoff-ProductList");
 const cyan_blue = "#E3F2FD";
 
 red_titles[0].style.backgroundColor=yellow_underline;
