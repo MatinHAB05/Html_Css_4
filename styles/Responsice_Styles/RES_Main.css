@@ -1,0 +1,99 @@
+@media screen and (min-width: 1201px) { 
+    .main__saleoff-ProductList{
+          grid-auto-columns: 33%;
+    }
+    
+
+}
+
+@media  screen and (max-width: 1200px) {
+    
+}
+
+@media  screen and (max-width: 1040px) {
+
+    
+}
+
+
+@media  screen and (max-width: 992px) {
+
+}
+
+@media  screen and (max-width: 870px) {
+
+}
+
+
+@media  screen and (max-width: 768px) {
+    
+
+    .main__saleoff-ProductList{
+        grid-auto-columns: 400px;
+  }
+
+}
+
+
+@media  screen and (max-width: 685px) { 
+    .main__saleoff-ProductList{
+        grid-auto-columns: 350px;
+  }
+
+}
+
+
+@media  screen and (max-width: 576px) { 
+    
+
+}
+
+
+
+@media  screen and (max-width: 400px) { 
+    .red-title{
+        font-size: 2rem;
+    }
+    .__SeeAllBtn{
+        font-size: 1rem;
+    }
+
+
+    
+.main__saleoff-ProductList{
+
+    grid-auto-flow: row;
+
+
+      overflow-x: auto;
+      grid-row-gap:  1rem;
+      overflow-y: auto;
+    cursor: default;
+    margin-bottom: 2rem;
+    }
+
+}
+
+
+
+@media  screen and (max-width: 350px) { 
+
+
+}
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 200px) { 
+    
+
+
+}
+
+
+
+
