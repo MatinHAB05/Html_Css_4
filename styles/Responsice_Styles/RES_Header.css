@@ -50,14 +50,61 @@
 /*Menu Bar*/
 @media  screen and (max-width: 870px) {
     .header_top{
-        grid-template-areas: "main-nav nav-btn mobile_menu";
+        grid-template-areas: "mac_header nav-btn mobile_menu";
     }
     .header__Mainnavbtn-Container{
         grid-column-gap: 0rem;
     }
+
+    .header__Mainnavbtn-Container{
+        /*display: none;
+        */grid-auto-flow: row;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgb(46, 41, 41);
+        grid-template-columns: 100%;
+        grid-column-gap: 0;
+        grid-row-gap: 1.5rem;
+        align-items: center;
+        grid-area: main-nav;
+        justify-content: start;
+        align-content: start;
+        width: 60%;
+        z-index: 99999;
+        height: 100vh ;
+        overflow-y: auto;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+
+    .anim_Main-nav-btn__hover{
+        display: none !important;
+    }
+
     .header__Mainnavtext{
-        
-        display: none;
+        font-size: 1.5rem;
+        font-family: "Poppins_M";
+        color: var(--grey_text_color);
+        text-decoration: none;
+        width: fit-content;
+        margin: 0 0;
+        color: var(--white_text_color);
+    }
+    
+    ._CURRENT-PAGE{
+        font-family: "Poppins_SemiB";
+        color: var(--Red_theme_color);
+        position: relative;
+    }
+    ._CURRENT-PAGE::before{
+        animation: fade_in 650ms ease-in 10ms infinite alternate forwards;
+        -webkit-animation: fade_in 650ms ease-in 10ms infinite alternate forwards;
     }
     .header_top_menubarMobile-container{
         display: grid;
@@ -67,6 +114,8 @@
     }
     
 }
+
+
 
 
 @media  screen and (max-width: 768px) {

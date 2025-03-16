@@ -45,7 +45,7 @@ function applyEffect(index,status){
     else{
         if (elementsList[i] && index!=i) { 
             elementsList[i].style.zIndex=navicons_z_index_value;
-        console.log(i+navicons_z_index_value)
+        // console.log(i+navicons_z_index_value)
         }
 
     }
@@ -100,7 +100,7 @@ MAC_ICON.addEventListener("mouseenter", function () {
 
     }, 100); 
   
-    console.log(0);
+    // console.log(0);
     
   });
   
@@ -118,7 +118,7 @@ MAC_ICON.addEventListener("mouseenter", function () {
         applyEffect(0,1);
     },500)
   
-    console.log(1);
+    // console.log(1);
   });
 
 // ************************************************************************************************
@@ -142,7 +142,7 @@ HOME_TITLE_links.addEventListener("mouseenter", function () {
       anim_box.classList.add("Header_hover_mainLink_ENTER");
     }, 100); 
   
-    console.log(0);
+    // console.log(0);
     
   });
   
@@ -161,7 +161,7 @@ HOME_TITLE_links.addEventListener("mouseenter", function () {
         applyEffect(1,1);
     },500)
 
-    console.log(1);
+    // console.log(1);
   });
 
 // ************************************************************************************************
@@ -184,7 +184,7 @@ MENU_TITLE_links.addEventListener("mouseenter", function () {
       anim_box.classList.add("Header_hover_mainLink_ENTER");
     }, 100); 
   
-    console.log(2);
+    // console.log(2);
     
   });
   
@@ -200,7 +200,7 @@ MENU_TITLE_links.addEventListener("mouseenter", function () {
     setTimeout(()=>{
         applyEffect(2,1);
     },500)
-    console.log(3);
+    // console.log(3);
   });
 
 // ************************************************************************************************
@@ -223,7 +223,7 @@ SALE_OFF_links.addEventListener("mouseenter", function () {
       anim_box.classList.add("Header_hover_mainLink_ENTER");
     }, 100); 
   
-    console.log(4);
+    // console.log(4);
     
   });
   
@@ -240,7 +240,7 @@ SALE_OFF_links.addEventListener("mouseenter", function () {
     setTimeout(()=>{
         applyEffect(3,1);
     },500)
-    console.log(5);
+    // console.log(5);
   });
 
 
@@ -264,7 +264,7 @@ NEWS_links.addEventListener("mouseenter", function () {
       anim_box.classList.add("Header_hover_mainLink_ENTER");
     }, 100); 
   
-    console.log(6);
+    // console.log(6);
     
   });
   
@@ -281,7 +281,7 @@ NEWS_links.addEventListener("mouseenter", function () {
     setTimeout(()=>{
         applyEffect(4,1);
     },500)
-    console.log(7);
+    // console.log(7);
   });
 
 
@@ -304,7 +304,7 @@ NAV_LINKS_links.addEventListener("mouseenter", function () {
     anim_box.classList.add("Header_hover_mainLink_ENTER");
   }, 100); 
 
-  console.log(8);
+  // console.log(8);
   
 });
 
@@ -321,7 +321,7 @@ NAV_LINKS_links.addEventListener("mouseleave", function () {
   setTimeout(()=>{
     applyEffect(5,1);
 },500)
-  console.log(9);
+  // console.log(9);
 });
 
 // ************************************************************************************************
@@ -342,4 +342,125 @@ minus_btn.addEventListener("click", function() {
     }
     number_order_int = number_order_int - 1;
     number_order.innerHTML = number_order_int.toString();
+});
+
+
+
+
+
+
+
+
+const root = getComputedStyle(document.documentElement); 
+const primaryColor = root.getPropertyValue('--Red_theme_color');  
+const light_black = root.getPropertyValue('--blackLight_text_color'); 
+const secoandColor = root.getPropertyValue("--Yellow_theme_color"); 
+
+
+
+let menu_status = false;
+
+const menu_bar_icon = document.querySelector(".header_top_menubarMobile-container");
+const menu_bar_icon_items =[ document.querySelector("#menu_path_1") , 
+document.querySelector("#menu_path_2_1") ,  document.querySelector("#menu_path_2_2") ,  document.querySelector("#menu_path_2_3") , 
+document.querySelector("#menu_path_3") ];
+const menu_bar_box = document.querySelector(".header__Mainnavbtn-Container");
+
+
+function menu_icon_anim_REMOVE(){
+  menu_bar_icon_items[0].classList.remove("anim_menubar_ICON_in_top","anim_menubar_ICON_out_top");
+
+  menu_bar_icon_items[1].classList.remove("anim_menubar_ICON_in_middle_notmid","anim_menubar_ICON_out_middle_notmid");
+  menu_bar_icon_items[2].classList.remove("anim_menubar_ICON_in_middle_mid","anim_menubar_ICON_out_middle_mid");
+  menu_bar_icon_items[3].classList.remove("anim_menubar_ICON_in_middle_notmid","anim_menubar_ICON_out_middle_notmid");
+
+  menu_bar_icon_items[4].classList.remove("anim_menubar_ICON_in_bottom","anim_menubar_ICON_out_bottom");
+
+}
+
+function menu_icon_anim_IN(){
+  menu_bar_icon_items[0].classList.add("anim_menubar_ICON_in_top");
+
+  menu_bar_icon_items[1].classList.add("anim_menubar_ICON_in_middle_notmid");
+  menu_bar_icon_items[2].classList.add("anim_menubar_ICON_in_middle_mid");
+  menu_bar_icon_items[3].classList.add("anim_menubar_ICON_in_middle_notmid");
+
+  menu_bar_icon_items[4].classList.add("anim_menubar_ICON_in_bottom");
+
+
+
+
+}
+function menu_icon_anim_IN_SETprop(){
+  menu_bar_icon_items[0].style.transform = "translateY(0px)";
+  menu_bar_icon_items[4].style.transform = "translateY(0px)";
+  menu_bar_icon_items[0].setAttribute("fill", light_black);
+  menu_bar_icon_items[4].setAttribute("fill", light_black);
+
+  menu_bar_icon_items[1].style.transform = "scaleX(1)";
+  menu_bar_icon_items[2].setAttribute("fill", light_black);
+  menu_bar_icon_items[3].style.transform = "scaleX(1)";
+  menu_bar_box.style.transform = "translateX(-105%)";
+}
+
+function menu_icon_anim_OUT(){
+  menu_bar_icon_items[0].classList.add("anim_menubar_ICON_out_top");
+
+  menu_bar_icon_items[1].classList.add("anim_menubar_ICON_out_middle_notmid");
+  menu_bar_icon_items[2].classList.add("anim_menubar_ICON_out_middle_mid");
+  menu_bar_icon_items[3].classList.add("anim_menubar_ICON_out_middle_notmid");
+
+  menu_bar_icon_items[4].classList.add("anim_menubar_ICON_out_bottom");
+
+}
+
+function menu_icon_anim_OUT_SETprop(){
+  menu_bar_icon_items[0].style.transform = "translateY(3px)";
+  menu_bar_icon_items[4].style.transform = "translateY(-4px)";
+  menu_bar_icon_items[0].setAttribute("fill", secoandColor);
+  menu_bar_icon_items[4].setAttribute("fill", secoandColor);
+
+  menu_bar_icon_items[1].style.transform = "scaleX(0)";
+  menu_bar_icon_items[2].setAttribute("fill", primaryColor);
+  menu_bar_icon_items[3].style.transform = "scaleX(0)";
+
+  menu_bar_box.style.transform = "translateX(0%)";
+
+
+}
+
+
+
+
+menu_bar_icon.addEventListener("click", function() {
+
+
+  menu_icon_anim_REMOVE();
+  menu_bar_box.classList.remove("anim_menubar_out","anim_menubar_in");
+  
+  if(menu_status==false){
+    menu_icon_anim_IN_SETprop();
+    setTimeout(()=>{
+      menu_icon_anim_IN();
+      
+       menu_bar_box.classList.add("anim_menubar_in");
+    
+      },100)
+  }
+
+  else{
+    menu_icon_anim_OUT_SETprop();
+
+    setTimeout(()=>{
+      menu_icon_anim_OUT();
+
+      
+      menu_bar_box.classList.add("anim_menubar_out");
+
+      },100)
+  }
+  
+  menu_status=!menu_status;
+
+
 });

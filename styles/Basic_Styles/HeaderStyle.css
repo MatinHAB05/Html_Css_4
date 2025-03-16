@@ -5,7 +5,7 @@ header{
 .header_top{
     position: relative;
     justify-content: space-between;
-    grid-template-areas: "main-nav nav-btn";
+    grid-template-areas: "mac_header main-nav nav-btn";
     grid-template-rows: auto;
     display: grid;
     padding:var(--container-padding);
@@ -21,6 +21,12 @@ header{
     padding:var(--container-padding);
     width: 100%;
 
+}
+.heaer__Mainnavbtn-container__macIcon{
+    grid-area: mac_header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 

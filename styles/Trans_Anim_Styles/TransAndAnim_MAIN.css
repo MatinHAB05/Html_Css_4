@@ -38,53 +38,11 @@
     animation: fade_in 800ms ease-in 10ms infinite alternate forwards;
     -webkit-animation: fade_in 800ms ease-in 10ms infinite alternate forwards;
 }
-@keyframes fade_in{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 .bell_Ring_anim{
     -webkit-animation: bell_Ring 100ms ease 110ms infinite alternate;
     animation: bell_Ring 100ms ease 110ms infinite alternate;
-}
-@-webkit-keyframes bell_Ring {
-    0% {
-        transform: rotate(-3deg);
-        -webkit-transform: rotate(-3deg);
-        -moz-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-        -o-transform: rotate(-3deg);
-}
-
-    100%{
-                   transform: rotate(3deg);
-                   -webkit-transform: rotate(3deg);
-                   -moz-transform: rotate(3deg);
-                   -ms-transform: rotate(3deg);
-                   -o-transform: rotate(3deg);
-}
-}
-
-@keyframes bell_Ring {
-    0% {
-                 transform: rotate(-3deg);
-                 -webkit-transform: rotate(-3deg);
-                 -moz-transform: rotate(-3deg);
-                 -ms-transform: rotate(-3deg);
-                 -o-transform: rotate(-3deg);
-}
-
-    100%{
-                  transform: rotate(3deg);
-                -webkit-transform: rotate(3deg);
-                -moz-transform: rotate(3deg);
-                -ms-transform: rotate(3deg);
-                -o-transform: rotate(3deg);
-}
 }
 
 
@@ -122,22 +80,7 @@
     -webkit-animation: Doallr_Out_Anim 1000ms ease 100ms 1 normal forwards;
 }
 
-@keyframes Doallr_In_Anim {
 
-    100%{
-        padding-left: 150%;
-    }
-}
-
-@keyframes Doallr_Out_Anim {
-    100%{
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
-    }
-}
 
 .__SeeAllBtn:hover{
     color: rebeccapurple;

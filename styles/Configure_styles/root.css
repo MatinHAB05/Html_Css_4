@@ -68,3 +68,126 @@ a{
     text-decoration: none;
     color: yellow;
 }
+
+
+@keyframes boxShad_border_IN {
+    100%{
+        border: 1px solid wheat;
+        box-shadow: 0 0 20px white;
+    }
+}
+@keyframes boxShad_border_OUT {
+    100%{
+        border: 1px solid transparent;
+        box-shadow: 0 0 0 white;
+    }
+}
+
+
+@keyframes _hover_mainLink_ENTER {
+    
+    100%{
+         letter-spacing: initial; 
+         opacity: 1 ;
+    }
+
+}
+
+
+@keyframes _hover_mainLink_OUT {
+ 
+    100%{
+        letter-spacing: 50vw; 
+        opacity: 0;
+   }
+}
+
+
+@-webkit-keyframes bell_Ring {
+    0% {
+        -webkit-transform: rotate(-3deg);
+                transform: rotate(-3deg);
+    
+    }
+
+    100%{
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+}
+
+@keyframes bell_Ring {
+    0% {
+        -webkit-transform: rotate(-3deg);
+                transform: rotate(-3deg);
+    
+    }
+
+    100%{
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+}
+
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bell_Ring {
+    0% {
+        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+}
+
+    100%{
+                   transform: rotate(3deg);
+                   -webkit-transform: rotate(3deg);
+                   -moz-transform: rotate(3deg);
+                   -ms-transform: rotate(3deg);
+                   -o-transform: rotate(3deg);
+}
+}
+
+@keyframes bell_Ring {
+    0% {
+                 transform: rotate(-3deg);
+                 -webkit-transform: rotate(-3deg);
+                 -moz-transform: rotate(-3deg);
+                 -ms-transform: rotate(-3deg);
+                 -o-transform: rotate(-3deg);
+}
+
+    100%{
+                  transform: rotate(3deg);
+                -webkit-transform: rotate(3deg);
+                -moz-transform: rotate(3deg);
+                -ms-transform: rotate(3deg);
+                -o-transform: rotate(3deg);
+}
+}
+
+
+@keyframes Doallr_In_Anim {
+
+    100%{
+        padding-left: 150%;
+    }
+}
+
+@keyframes Doallr_Out_Anim {
+    100%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+}

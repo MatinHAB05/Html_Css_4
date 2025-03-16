@@ -34,18 +34,7 @@
     -webkit-animation: boxShad_border_OUT 200ms ease  1 normal forwards;
 }
 
-@keyframes boxShad_border_IN {
-    100%{
-        border: 1px solid wheat;
-        box-shadow: 0 0 20px white;
-    }
-}
-@keyframes boxShad_border_OUT {
-    100%{
-        border: 1px solid transparent;
-        box-shadow: 0 0 0 white;
-    }
-}
+
 
 .__social-nav__items{
     transition: background-color 300ms ease-in 50ms , color 100ms ease-in 100ms ;
