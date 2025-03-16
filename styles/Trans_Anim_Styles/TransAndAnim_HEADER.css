@@ -320,3 +320,11 @@
         -o-transform: translateX(-105%);
 }
 }
+
+body > *:not(header) , header > *:not(.header_top) ,.header_top > *:not(.header_top_menubarMobile-container):not(.header__Mainnavbtn-Container){
+    transition: filter 500ms ease 10ms;
+    -webkit-transition: filter 500ms ease 10ms;
+    -moz-transition: filter 500ms ease 10ms;
+    -ms-transition: filter 500ms ease 10ms;
+    -o-transition: filter 500ms ease 10ms;
+}

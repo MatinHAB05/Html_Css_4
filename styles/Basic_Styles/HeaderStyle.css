@@ -5,7 +5,7 @@ header{
 .header_top{
     position: relative;
     justify-content: space-between;
-    grid-template-areas: "mac_header main-nav nav-btn";
+    grid-template-areas: "wrapper_nav_h nav-btn";
     grid-template-rows: auto;
     display: grid;
     padding:var(--container-padding);
@@ -29,6 +29,12 @@ header{
     align-items: center;
 }
 
+.mac_mainnavlinkHeader_wrapper{
+    display: grid;
+    grid-area: wrapper_nav_h;
+    justify-content: start;
+    grid-template-areas: "mac_header main-nav"
+}
 
 /* ediiit .header__GridItmes{
 

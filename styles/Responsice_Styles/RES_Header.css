@@ -30,6 +30,7 @@
 
 }
 
+
     
 }
 
@@ -50,15 +51,23 @@
 /*Menu Bar*/
 @media  screen and (max-width: 870px) {
     .header_top{
-        grid-template-areas: "mac_header nav-btn mobile_menu";
+        grid-template-areas: "wrapper_nav_h nav-btn mobile_menu";
     }
+    
+    .mac_mainnavlinkHeader_wrapper{
+        z-index: 9999;
+    grid-template-areas: "mac_header";
+    
+    }
+
+
     .header__Mainnavbtn-Container{
         grid-column-gap: 0rem;
     }
 
     .header__Mainnavbtn-Container{
-        /*display: none;
-        */grid-auto-flow: row;
+        /* display: none;*/
+        grid-auto-flow: row;
         position: fixed;
         left: 0;
         top: 0;
@@ -70,7 +79,7 @@
         grid-area: main-nav;
         justify-content: start;
         align-content: start;
-        width: 60%;
+        width: 60vw;
         z-index: 99999;
         height: 100vh ;
         overflow-y: auto;
@@ -94,9 +103,28 @@
         text-decoration: none;
         width: fit-content;
         margin: 0 0;
-        color: var(--white_text_color);
+        color: blueviolet;
     }
+
     
+    .header__Mainnavtext:hover::first-letter{
+        color: var(--Yellow_theme_color);
+    }
+    /* body > *:not(header){
+            filter: blur(5px) ;
+            -webkit-filter: blur(5px) ;
+}
+
+header > *:not(.header_top){
+    filter: blur(5px) ;
+    -webkit-filter: blur(5px) ;
+}
+
+.header_top > *:not(.header_top_menubarMobile-container){
+    filter: blur(5px) ;
+    -webkit-filter: blur(5px) ;
+}
+     */
     ._CURRENT-PAGE{
         font-family: "Poppins_SemiB";
         color: var(--Red_theme_color);
@@ -257,6 +285,16 @@
     
     .delivery_absloute-Container{
         display: none;
+    
+    }
+
+    .header__Mainnavtext{
+        font-size: 1.5rem;
+  
+    }
+    .header__Mainnavbtn-Container{
+        width: 70vw;
+
 }
     
 
@@ -284,6 +322,11 @@
     .__MainOdernowBtn{
         padding: 0.5rem 1rem;
     }
+
+    .header__Mainnavtext{
+        font-size: 1rem;
+    }
+
 
 
 

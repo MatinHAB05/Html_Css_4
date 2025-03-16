@@ -365,7 +365,28 @@ const menu_bar_icon_items =[ document.querySelector("#menu_path_1") ,
 document.querySelector("#menu_path_2_1") ,  document.querySelector("#menu_path_2_2") ,  document.querySelector("#menu_path_2_3") , 
 document.querySelector("#menu_path_3") ];
 const menu_bar_box = document.querySelector(".header__Mainnavbtn-Container");
+const blur_items = [
+  ...document.querySelectorAll("body > *:not(header)"),
+  ...document.querySelectorAll("header > *:not(.header_top)"),
+  ...document.querySelectorAll(".header_top > *:not(.header_top_menubarMobile-container):not(.mac_mainnavlinkHeader_wrapper)"),
+  ...document.querySelectorAll(".mac_mainnavlinkHeader_wrapper > *:not(.header__Mainnavbtn-Container")
 
+];
+
+function blur_disable_ON(){
+for(let x =0 ; x<blur_items.length ; x++){
+  blur_items[x].style.filter = 'blur(5px)';
+  blur_items[x].style.pointerEvents = 'none'; 
+
+}
+}
+function blur_disable_OFF(){
+  for(let x =0 ; x<blur_items.length ; x++){
+    blur_items[x].style.filter = 'blur(0)';
+    blur_items[x].style.pointerEvents = 'auto'; 
+  
+  }
+  }
 
 function menu_icon_anim_REMOVE(){
   menu_bar_icon_items[0].classList.remove("anim_menubar_ICON_in_top","anim_menubar_ICON_out_top");
@@ -442,7 +463,7 @@ menu_bar_icon.addEventListener("click", function() {
     menu_icon_anim_IN_SETprop();
     setTimeout(()=>{
       menu_icon_anim_IN();
-      
+      blur_disable_ON();
        menu_bar_box.classList.add("anim_menubar_in");
     
       },100)
@@ -453,7 +474,7 @@ menu_bar_icon.addEventListener("click", function() {
 
     setTimeout(()=>{
       menu_icon_anim_OUT();
-
+      blur_disable_OFF(); 
       
       menu_bar_box.classList.add("anim_menubar_out");
 
