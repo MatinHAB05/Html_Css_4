@@ -30,7 +30,7 @@ This project is forth practice project for reviewing and practicing the markup l
   - :white_check_mark: Design Guide Structure & HTML
   - :white_check_mark: CSS Styles (Colors, Shadows, Transitions, ...)
   - :white_check_mark: New Animations
-  - :white_check: Five-Star Rating 
+  - :white_circle: Five-Star Rating 
 - :white_check_mark: Footer
   - :white_check_mark: Design Guide Structure & HTML
   - :white_check_mark: CSS Styles (Colors, Shadows, Transitions, ...)
