@@ -2,7 +2,7 @@
 title: Forth HTML-CSS Project
 author: Matin HAB
 tags: [practice, html-css]
-date: 2025-02-25
+date: 2025-03-06
 ---
 
 # HTML-CSS Practice Project
