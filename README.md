@@ -51,7 +51,10 @@ The goal of this practice was to write HTML and CSS code and practice how can cs
 - Java Script
 
 ## How to View
-[Check it here](https://www.google.com)
+[Check it here](https://matinhab05.github.io/Html_Css_4/)
 
 ## Project Preview
-Some project screenshots will be placed here.
+![Preview 1](https://github.com/user-attachments/assets/46d06766-424a-439b-8d9b-4ef3f40351d9)
+
+![Preview 2](https://github.com/user-attachments/assets/b054edf8-6178-4954-99e7-709a758c2aee)
+
